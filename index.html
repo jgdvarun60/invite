@@ -2,63 +2,75 @@
 ---
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta property="og:title" content="How to change the address bar color in Chrome, Firefox, Opera, Safari" />
-    <meta property="og:description" content="How to change the address bar color in Chrome, Firefox, Opera, Safari" />
-    
-    <title>{{ site.title }}</title>
-    {% include favicon.html %}
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/zoom.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <script src="https://use.fontawesome.com/4c9066f1a6.js"></script>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>WhatsApp</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Quickly send and receive WhatsApp messages right from your computer.">
+  <meta name="og:description" content="Quickly send and receive WhatsApp messages right from your computer.">
+  <meta name="og:url" content="https://web.whatsapp.com/">
+  <meta name="og:title" content="WhatsApp Web">
+  <meta name="og:image" content="https://static.facebook.com/images/whatsapp/www/whatsapp-promo.png">
+  <link rel="apple-touch-icon" sizes="194x194" href="/apple-touch-icon.png" type="image/png">
+
+  <title>{{ site.title }}</title>
+  {% include favicon.html %}
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/zoom.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+  <script src="https://use.fontawesome.com/4c9066f1a6.js"></script>
 
 
-  </head>
-  <body>
-    <div id="container">
-      <!--------------- YOUR NAME OVER HERE -------------->
-      <h2 class="header">{{ site.full_name }}</h2>
-      <div id="gallery">
-      </div>
+</head>
+
+<body>
+  <div id="container">
+    <!--------------- YOUR NAME OVER HERE -------------->
+    <h2 class="header">{{ site.full_name }}</h2>
+    <div id="gallery">
     </div>
-    
-    <div class="footer">
-      <div class="links">
-        <a id="instagram" class="links__icon" href="https://www.instagram.com/{{ site.instagram }}">
-          <span class="view-ig"> View my Instagram </span>
-          <i class="fa fa-instagram fa-lg"></i>
-        </a>
-      </div>
+  </div>
+
+  <div class="footer">
+    <div class="links">
+      <a id="instagram" class="links__icon" href="https://www.instagram.com/{{ site.instagram }}">
+        <span class="view-ig"> View my Instagram </span>
+        <i class="fa fa-instagram fa-lg"></i>
+      </a>
     </div>
-  </body>
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
-  <script src="js/transition.js"></script>
-  <script src="js/zoom.min.js"></script>
-  <script src="js/gallery.js"></script>
-  <script>
-    var COLUMNS = 'columns';
-    var ROWS = 'rows';
-    var SQUARES = 'squares';
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
+<script src="js/transition.js"></script>
+<script src="js/zoom.min.js"></script>
+<script src="js/gallery.js"></script>
+<script>
+  var COLUMNS = 'columns';
+  var ROWS = 'rows';
+  var SQUARES = 'squares';
 
-    var columns = COLUMNS;
-    var rows = ROWS;
-    var squares = SQUARES;
+  var columns = COLUMNS;
+  var rows = ROWS;
+  var squares = SQUARES;
 
-    var layoutStyle = {{ site.layout_style }};
+  var layoutStyle = {{ site.layout_style }};
 
-    var configuration = {
-      spacing: {{ site.spacing }},
-      shuffle: {{ site.shuffle }},
-      columns: {{ site.columns }},
-      maxHeight: {{ site.max_height }}
+  var configuration = {
+    spacing: {{ site.spacing }},
+  shuffle: { { site.shuffle } },
+  columns: { { site.columns } },
+  maxHeight: { { site.max_height } }
     };
-  </script>
-  <script src="js/script.js"></script>
-  {% include ga.html %}
+</script>
+<script src="js/script.js"></script>
+{% include ga.html %}
+
 </html>
