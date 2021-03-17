@@ -1,9 +1,7 @@
-# Gallery
-A visual portfolio generator with web hosting for your mockups and photo albums. Requires no 3rd party libraries or installations. A 🤑free🤑 Squarespace alternative for your photos. Live demo at http://andyzhang.net/gallery
+# Invitation
+A visual portfolio generator with web hosting for your mockups and photo albums. Requires no 3rd party libraries or installations. A 🤑free🤑 Squarespace alternative for your photos. Live demo at https://jgdvarun60.github.io/invite/
 
-![demo](http://g.recordit.co/myz4N5iMzg.gif)
-
-*Gallery is a side project of mine to allow me to create a more curated version of my photography and mockup portfolio. It's intended to have a simple setup process that is accessible by anyone. If you have any feedback for Gallery, [drop me a line](mailto:andzhng@gmail.com?Subject=Hey!) :)*
+*Gallery is a side project of mine to allow me to create a more curated version of my photography and mockup portfolio. It's intended to have a simple setup process that is accessible by anyone. If you have any feedback for Gallery, [drop me a line](mailto:jgdvarun60@gmail.com?Subject=Hey!) :)*
 
 
 ## Dependencies
@@ -14,26 +12,19 @@ A visual portfolio generator with web hosting for your mockups and photo albums.
 - Clone the repository through terminal by running
 `git clone git@github.com:{YOUR_USERNAME}/gallery.git`
 - Replace contents of `/photos` with all of your albums. For each of your albums, create a folder with the same name as your album name, and then put all of your photos in the folder. 
-**Example**:
-```
-/photos
-  /mockups
-    IMG_0123.jpg
-    IMG_0124.jpg
-  /portrait
-    IMG_1234.jpg
-    IMG_1235.jpg
-```
-
 - Open the folder in finder and **double click** `setup.command`. This will go through all of your albums and create a `config.json` file for you. This file allows the generator to know which photos will be hosted on your website.✨
 - Personalize the contents at the bottom of `_config.yml`.
-- Commit all of your changes and then push all of your changes to Github by running
+- Commit all of your changes to your repository and then push all of your changes to Github by running
+
 ```
 $ git checkout -B gh-pages  # This creates a branch that will be hosted at {username}.github.io/gallery
 $ git commit -am "Create my first gallery"  # This saves all of your changes
 $ git push origin gh-pages  # This pushes your gallery to be hosted!
 ```
+
 - Check out your site at {username}.github.io/gallery 🎉✨!
+
+If you find any issues check out https://pages.github.com/ for github pages documentaiton 
 
 *Important notes:* To ⏭speed⏭ up the loading time of your gallery, please make sure to compress your images. If you're running this on a macOS system, this is done automatically for you using `sips`!
 If you want Google Analytics, replace `_includes/ga.html` with your own snippet.
@@ -70,10 +61,6 @@ Columns takes priority if both are set.
 ### Row Configuration
 - `maxHeight` (Integer): The max height in px for each photo. *Default is `400`*.
 
-### Instagram
-- `instagram` (String): Your Instagram handle. If no string is passed, no footer
-  is rendered.
-
 
 ## Fun Facts
 - No Bootstrap is used. AT ALL! 🔥🔥🔥
@@ -82,8 +69,3 @@ Columns takes priority if both are set.
 
 🔥🔥🔥
 
----
-
-If you enjoyed using Gallery, I'd love to see what you created with Gallery 🙌
-
-Share your gallery with me on this [thread](https://github.com/andyzg/gallery/issues/1)❤️!
