@@ -1,4 +1,22 @@
 {
+  "Babies": [
+    {
+      "height": 531,
+      "compressed_path": "./photos/Babies/2853.min.jpg",
+      "width": 413,
+      "compressed": true,
+      "placeholder_path": "./photos/Babies/2853.placeholder.jpg",
+      "path": "./photos/Babies/2853.jpg"
+    },
+    {
+      "height": 960,
+      "compressed_path": "./photos/Babies/First Month.min.jpeg",
+      "width": 1280,
+      "compressed": true,
+      "placeholder_path": "./photos/Babies/First Month.placeholder.jpeg",
+      "path": "./photos/Babies/First Month.jpeg"
+    }
+  ],
   "Travel Photography": [
     {
       "height": 4472,
